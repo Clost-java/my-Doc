@@ -34,7 +34,7 @@ def mouse(r):
         res = "老鼠不能穿过"
     return  res
 
-print("地球表面积为{}平方米".format(area))
-print("地球体积为{}立方米".format(volume))
-print("地球赤道周长为{}米".format(perimeter))
-print(mouse)
+print("地球表面积为{}平方米".format(area(radius)))
+print("地球体积为{}立方米".format(volume(radius)))
+print("地球赤道周长为{}米".format(perimeter(radius)))
+print(mouse(radius))

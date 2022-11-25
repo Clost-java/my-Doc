@@ -6,15 +6,15 @@ def getNum():
     iNumStr = input("请输入数字(直接输入回车退出):")
     while iNumStr != "":
         nums.append(eval(iNumStr))
-        iNumStr = input("请输入数字(直接输入回车退出):")
-        return nums
+        iNumStr = input("")
+    return nums
 
 
 # 平均值
 def mean(numbers):
     s = 0.0
     for num in numbers:
-        s += sum
+        s += num
     return s / len(numbers)
 
 # 标准差
@@ -37,6 +37,6 @@ def median(numbers):
     return med
 
 n = getNum()
-m = mean()
+m = mean(n)
 
-print("平均值:{},标准差:{:.2},中位数:{}.".format(m,dev(n,m),median(n)))
+print("平均值:{:.3},标准差:{:.3},中位数:{}".format(m,dev(n,m),median(n)))
